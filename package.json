@@ -4,7 +4,11 @@
   "description": "ES6 Basics",
   "main": ".eslintrc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/.bin/eslint",
+    "check-lint": "lint [0-9]*.js",
+    "dev": "npx babel-node",
+    "test": "jest",
+    "full-test": "./node_modules/.bin/eslint **/*.js && jest"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +19,6 @@
     "@babel/node": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "babel-jest": "^29.7.0",
-    "babel-node": "^0.0.1-security",
     "eslint": "^9.15.0",
     "jest": "^29.7.0"
   }
