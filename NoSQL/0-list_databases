@@ -1,3 +1,2 @@
-#!/bin/bash
-# my comment
-mongosh --eval "printjson(db.adminCommand('listDatabases'))"
+// list all dbs
+show dbs
